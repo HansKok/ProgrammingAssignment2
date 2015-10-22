@@ -1,3 +1,9 @@
+# This function stores a matrix and the inverse of the
+# matrix.
+# The matrix and the inverse of the matrix are stored in the cache.
+# This makes sure that the matrix inversion is calculated only
+# once when the matrix does not change.
+
 makeCacheMatrix <- function(m = matrix()) {
     m_inv <- NULL
     set <- function(m_in) {
@@ -13,8 +19,8 @@ makeCacheMatrix <- function(m = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+# This function calculates the inverse of the matrix.
+# The inverted matrix is stored in the cache.
 cacheSolve <- function(m_in, ...) {
     m_inv <- m_in$get_inv()
     
