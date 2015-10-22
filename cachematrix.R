@@ -3,7 +3,6 @@
 # The matrix and the inverse of the matrix are stored in the cache.
 # This makes sure that the matrix inversion is calculated only
 # once when the matrix does not change.
-
 makeCacheMatrix <- function(m = matrix()) {
     m_inv <- NULL
     set <- function(m_in) {
